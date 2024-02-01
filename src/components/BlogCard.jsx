@@ -1,9 +1,9 @@
 export const BlogCard = ({ data }) => {
   return (
-    <div className="flex flex-wrap gap-[20px]">
+    <div className="flex w-full container flex-wrap gap-[20px]">
       {data.map((el) => {
         return (
-          <div className="py-[16px] px-[16px] flex justify-center items-center flex-col gap-[16px] rounded-[12px] bg-white border-solid border-[1px] border-inherit-100 w-[392px]">
+          <div className="py-[16px] px-[16px] flex justify-center items-center flex-col gap-[16px] rounded-[12px] bg-white border-solid border-[1px] w-[392px]">
             <div>
               <img
                 className="flex rounded-[6px] w-[360px] h-[240px]"
