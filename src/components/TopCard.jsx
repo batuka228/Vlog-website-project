@@ -7,7 +7,7 @@ export const TopCard = ({}) => {
     <div className=" flex  absolute top-0 left-0 sliderSec gap-[10px]   max-w-[5120px]relative h-[500px] ">
       {Top.map((el) => {
         return (
-          <div className="w-[1200px] h-fit relative  bg-black rounded-[16px]  ">
+          <div className="sm:w-[1200px] w-[600px]  h-fit relative  bg-black rounded-[16px]  ">
             <img
               className=" opacity-70 h-[500px] w-full rounded-[16px]"
               src={el.social_image}

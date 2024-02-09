@@ -5,7 +5,7 @@ import Link from "next/link";
 export const TrendingCard = ({}) => {
   const { articlesTrending } = useContext(FirstContext);
   return (
-    <div className="flex gap-[24px] ">
+    <div className="flex gap-[24px] sm:flex-row flex-col justify-center items-center ">
       {articlesTrending.map((el) => {
         return (
           <Link href={{ pathname: "single-page", query: { id: `${el.id}` } }}>

@@ -13,7 +13,7 @@ export const Header = () => {
           <Link href={"/"}>
             <Logo></Logo>
           </Link>
-          <div className="flex justify-between items-center w-[50%]">
+          <div className="sm:flex hidden justify-between items-center w-[50%]">
             <div>
               <div className="flex  justify-center items-center gap-[40px] *:text-sm">
                 <Link href={"/"}>
@@ -37,6 +37,11 @@ export const Header = () => {
               />
               <SearchIcon></SearchIcon>
             </div>
+          </div>
+          <div className="*:w-[24px] *:h-[6px] flex *:bg-gray-300 gap-[4px] flex-col mr-[40px] *:rounded-[8px] sm:hidden">
+            <div></div>
+            <div></div>
+            <div></div>
           </div>
         </div>
       </nav>
