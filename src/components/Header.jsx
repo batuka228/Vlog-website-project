@@ -1,24 +1,35 @@
 import { SearchIcon } from "./icon&logo/Search";
+import Link from "next/link";
 import { Logo } from "./icon&logo/Logo";
+import { FirstContext } from "./context";
+import { useContext, useState } from "react";
 
 export const Header = () => {
+  const { handleSearch } = useContext(FirstContext);
   return (
-    <div className="flex w-[100vw] h-fit container   items-start flex-row py-[32px] ">
-      <nav className="flex   w-full ">
+    <div className="flex h-fit w-full   items-center flex-row py-[32px] sticky top-0 bg-white z-[2] ">
+      <nav className="flex  container m-auto ">
         <div className="flex container justify-between ">
-          <div>
+          <Link href={"/"}>
             <Logo></Logo>
-          </div>
+          </Link>
           <div className="flex justify-between items-center w-[50%]">
             <div>
               <div className="flex  justify-center items-center gap-[40px] *:text-sm">
-                <div>Home</div>
-                <div>Blog</div>
-                <div>Contact</div>
+                <Link href={"/"}>
+                  <div>Home</div>
+                </Link>
+                <Link href={"/Blog"}>
+                  <div>Blog</div>
+                </Link>
+                <Link href={"/contactPage"}>
+                  <div>Contact</div>
+                </Link>
               </div>
             </div>
             <div className="flex justify-center items-center bg-gray-200 py-[8px] pl-[16px] pb-[8px] min-w-[166px] gap-[12px] rounded-[5px]">
               <input
+                onChange={handleSearch}
                 className="bg-gray-200 w-full text-sm"
                 type="text"
                 placeholder="Search"

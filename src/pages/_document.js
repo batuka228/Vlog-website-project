@@ -1,4 +1,6 @@
+import { FooterSec } from "@/components/Layout/Footer";
 import { Html, Head, Main, NextScript } from "next/document";
+import { Header } from "@/components/Header";
 
 export default function Document() {
   return (

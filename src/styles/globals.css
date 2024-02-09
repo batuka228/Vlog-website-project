@@ -15,7 +15,31 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
+.sliderSec {
+  animation-name: slider;
+  animation-duration: 10s;
+  animation-delay: 1s;
+  animation-play-state: running;
+  animation-iteration-count: infinite;
+}
 
+@keyframes slider {
+  0% {
+    left: 0px;
+  }
+  25% {
+    left: -1205px;
+  }
+  50% {
+    left: -2415px;
+  }
+  75% {
+    left: -3635px;
+  }
+  100% {
+    left: -4850px;
+  }
+}
 @layer utilities {
   .text-balance {
     text-wrap: balance;
