@@ -8,8 +8,8 @@ export const FooterSec = () => {
   return (
     <div className="flex justify-center w-full py-[56px] items-center bg-gray-200  bottom-0">
       <div className="container flex">
-        <div className="flex justify-between sm:flex-row flex-col sm:gap-[0px] gap-[40px] sm:px-[0px] px-[40px]">
-          <div className="flex flex-col w-1/3 gap-[56px]">
+        <div className="flex sm:justify-between justify-center  sm:flex-row flex-col sm:gap-[0px] gap-[40px] sm:px-[0px] px-[40px]">
+          <div className="sm:flex hidden  flex-col w-1/3 gap-[56px]">
             <div className="flex flex-col gap-[20px]">
               <div>About</div>
               <div>
@@ -19,7 +19,7 @@ export const FooterSec = () => {
                 dolorem tenetur laudantium fugit?
               </div>
             </div>
-            <div>
+            <div className="">
               <div>Email:info@jasmintea</div>
               <div>Phone:9969erhiin huruu chigchii huruu </div>
             </div>
